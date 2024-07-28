@@ -46,9 +46,11 @@ header{
 
 /* email container style */
 .form-container img{
-    height: 20vh;
+    min-height: 20vh;
+    min-width: 1.5em;
     display: block;
     margin-top: 0;
+  
 }   
 
 .form-container{
@@ -84,24 +86,75 @@ header{
   font-family: 'Quicksand', sans-serif;
 }
 
-label{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3em;
-    color: black;
-    font-weight: 1000;
-    padding: 1em;   
-}
-.cn button{
-    background-color:;
-    color: white;
-    font-size: 2em;
-    font-weight: 1000;
-    padding: 1em;
+
+.cn label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 1.5em;
+    color: var(--color-6);
+  }
+  
+  .cn input[type="email"] {
+    padding: 10px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 15px;
-    margin-top: 2em;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .cn button[type="submit"] {
+    background-color: var(--color-6);
+    color: var(--color-3);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-}
+    width: 100%;
+  }
+  
+  .cn form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .cn form input[type="email"] {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .cn form button[type="submit"] {
+    width: 80%;
+  }
+  .cn button[type="submit"] {
+    background-color: var(--color-6);
+    color: var(--color-3);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cn button[type="submit"]:hover {
+    background-color: var(--color-4);
+    color: var(--color-1);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cn button[type="submit"]:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
 
 footer{
     display: flex;
@@ -110,3 +163,11 @@ footer{
     background-color: var(--color-6);
     border: #FFFFF0 2px solid;
 }
+
+
+/************************/  
+
+/* Pop Up page Styles */
+
+/************************/ 
+
