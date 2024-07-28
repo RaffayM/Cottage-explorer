@@ -1,0 +1,112 @@
+/* font import Quicksand And Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+/* Color theme */
+:root {
+    --color-1: #D8CAB8; /* Warm Taupe */
+    --color-2: #5C4033; /* Charcoal Brown */
+    --color-3: #FFFFF0; /* Ivory */
+    --color-4: #6B8E23; /* Olive Green */
+    --color-5: #708090; /* Slate Gray */
+    --color-6: #003D4C; /* Deep Sea Blue */
+  }
+
+/* Default styling  Consistant across all pages */   
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-5);
+    background-image: url(./Images/pexels-pixabay-262405.jpg);
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/************************/  
+
+/* Landing page Styles */
+
+/************************/ 
+
+/* Header styling */ 
+header h1{
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-6);
+    font-weight: 1000;
+    font-size: 4em;
+    padding: 1em;
+    margin: 0;
+    
+}   
+header{
+    display: flex;
+    width: 100%;
+}
+
+
+/* email container style */
+.form-container img{
+    height: 20vh;
+    display: block;
+    margin-top: 0;
+}   
+
+.form-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    min-width: 100vw;
+    flex-direction: column;
+   
+}   
+.cn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--color-6) 2px solid;
+    border-radius: 15px;
+    padding: 7.5em;   
+    background-color: var(--color-1);
+    position: relative;
+    width: 450px;
+
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  padding-bottom: 2em;
+  padding-top: 4em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    color: black;
+    font-weight: 1000;
+    padding: 1em;   
+}
+.cn button{
+    background-color:;
+    color: white;
+    font-size: 2em;
+    font-weight: 1000;
+    padding: 1em;
+    border: none;
+    border-radius: 15px;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: var(--color-6);
+    border: #FFFFF0 2px solid;
+}

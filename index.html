@@ -9,17 +9,20 @@
 </head>
 <body>
     <header>
-        <img src="#" alt="Brand Logo">
-        <h1>Cottage Explorer</h1>
+        <h1>The Cottage Explorer.</h1>
     </header>
 
     <main>
         <div class="form-container">
-            <h2>Enter Your Email to Access the Search Page</h2>
-            <form action="popup.html" method="GET" onsubmit="return validateEmail()">
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <div class="cn">
+                <img src="./Images/Grey and Black Simple Minimalist Real Estate Logo.png" alt="Brand Logo"/>
+                <h2>Enter your email <span>to find <br> your dream Cottage</span></h2>
+        <label for="form">Email</label>
+        <form action="popup.html" method="GET" onsubmit="return validateEmail()">
+                <input type="email" id="email" name="email" placeholder="type here..." required> <i class="fa-solid fa-envelope"></i>
                 <button type="submit" value="Submit" class="Btn-Email">
         </form>
+    </div>
     </main>
 
     <footer>
