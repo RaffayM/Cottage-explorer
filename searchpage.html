@@ -1,29 +1,35 @@
+<!-- searchpage.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cottage Explorer/Searchpage.ca</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
-        <img src="#" alt="Brand Logo">
-        <h1>Cottage Explorer</h1>
+    <header class="sp-header">
+        <h1>The Cottage Explorer.</h1>
     </header>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Filter Search By Location</h2>
+            <form action="#" method="GET" onsubmit="">
+                <input type="text" id="location" name="location" placeholder="Enter location" required>
+                <button type="submit" value="Submit">Search</button>
+            </form>
+        </nav>
 
-    <nav>
-        <div class="Filter-container"></div>
-        <h2>Filter Search By Location</h2>
-        <form action="#" method="GET" onsubmit=""></form>
-        <input type="text" id="location" name="location" placeholder="Enter location" required> 
-        <button type="submit" value="Submit" class="Btn-SP">
-    </nav>
+        <main class="main-content">
+            <!-- MongoDB map filter will be displayed here -->
+            <div id="map"></div>
+        </main>
+    </div>
 
-    <main>
-        
-    </main>
+    <footer>
+        <h3>Project By: </h3>
+    </footer>
 
-    <footer> <h3>Project By: </h3></footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
